@@ -8,6 +8,7 @@
   --text: #000;
   --primary: #ABCB44;
   --secondary: #161616;
+  --tertiary: #B561F6;;
 
   --pink: rgb(233, 30, 99);
   --purple: rgb(156, 39, 176);
@@ -153,4 +154,9 @@ body {
   #cComingSoon {
     font-size: 2.2rem;
 }
+}
+
+img {
+  pointer-events: none;
+  user-select: none;
 }

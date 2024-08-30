@@ -3,9 +3,10 @@
 module.exports = {
   content: [
     "./src/app/layout.jsx",
-    "./src/app/cart/page.jsx",
+    "./src/app/forecast/page.jsx",
     "./src/app/contact/page.jsx",
-    "./src/app/products/page.jsx",
+    "./src/app/track/page.jsx",
+    "./src/app/dashboard/page.jsx",
     "./src/app/login/page.jsx",
     "./src/components/About.jsx",
     "./src/components/Hero.jsx",

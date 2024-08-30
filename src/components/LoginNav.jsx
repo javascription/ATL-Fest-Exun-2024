@@ -2,6 +2,7 @@
 
 import { useRef, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useSession } from 'next-auth/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons/faXmark';
@@ -47,16 +48,18 @@ export default function LoginNav() {
     return (
         <>
             <section>
-                <header className="relative pt-[2rem] pr-0 pb-[2rem] pl-0">
-                    <div className="fixed flex flex-wrap justify-between w-[100%] items-center z-[100]" ref={navbarRef}>
+                <header className="relative pt-[2rem] pr-0 pb-[2rem] pl-0 bg-[#ffffff3d]">
+                    <div className="bg-[#ffffff3d] fixed flex flex-wrap justify-between w-[100%] items-center z-[100]" ref={navbarRef}>
                         <div className="text-2xl ml-[3rem]">
-                            <Link href="/" className="mo:text-[2.5rem] mi:text-[1.8rem]">kisaan</Link>
+                            <Link href="/" className=" ml-[6rem] mo:text-[2.5rem] mi:text-[1.8rem] flex flex-row items-center text-primary font-[900]">
+                                <Image alt="logo" width={26.7558} height={55.199999999999996} src="/logo.svg"/>
+                                Kisaan
+                            </Link>
                         </div>
                         <ul className="relative flex gap-12 mo:hidden items-center">
                             <li><Link href="/forecast" className="relative">Weather</Link></li>
-                            <li><Link href="/track" className="relative">Progress</Link></li>
-                            <li><Link href="/products" className="relative">Products</Link></li>
-                            <li><Link href="/cart" className="relative">Cart</Link></li>
+                            <li><Link href="/track" className="relative">Learn</Link></li>
+                            <li><Link href="/dashboard" className="relative">Dashboard</Link></li>
                             <li><Link href="/contact" className="relative">Contact</Link></li>
                             <li>
                                 <Link href="/login" className="relative mr-[3.6rem] login">
@@ -77,9 +80,8 @@ export default function LoginNav() {
                                 text-center items-center z-[1]">
                     <ul className="gap-8 flex flex-col">
                         <li><Link className="text-[2.3rem] mx:text-[1.9rem]" href="/forecast">Weather</Link></li>
-                        <li><Link className="text-[2.3rem] mx:text-[1.9rem]" href="/track">Progress</Link></li>
-                        <li><Link className="text-[2.3rem] mx:text-[1.9rem]" href="/products">Products</Link></li>
-                        <li><Link className="text-[2.3rem] mx:text-[1.9rem]" href="/cart">Cart</Link></li>
+                        <li><Link className="text-[2.3rem] mx:text-[1.9rem]" href="/track">Learn</Link></li>
+                        <li><Link className="text-[2.3rem] mx:text-[1.9rem]" href="/dashboard">Dashboard</Link></li>
                         <li><Link className="text-[2.3rem] mx:text-[1.9rem]" href="/contact">Contact</Link></li>
                         <li><Link className="text-[2.3rem] mx:text-[1.9rem] login" href="/login">{session && session.user ? session.user.name.split(" ")[0] : "Login"}</Link></li>
                     </ul>
