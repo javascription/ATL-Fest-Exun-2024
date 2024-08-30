@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+
+  --background: #01050c;
+  --text: #e5edfd;
+  --secondary: #161616;
+
+  --pink: rgb(233, 30, 99);
+  --purple: rgb(156, 39, 176);
+  --blue: rgb(63, 81, 181);
+}
+
+@layer base {
+  html {
+    color-scheme: dark !important;
+  }
+}
+
+@media (prefers-color-scheme: white) {
+  :root {
+    color-scheme: white;
+  }
+} 
+
+body {
+  color: rgb(var(--foreground-rgb));
+  
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.p-13-percent {
+  padding: 25% 0;
+}
+
+.p-2-3-percent {
+  padding: 1.4% 3%;
+}
+
+.f-links a {
+  padding-inline: 5px;
+} 
+
+@media (max-width: 650px) {
+  .footer {
+    padding: 20px;
+  }
+
+  .f-links a {
+    padding-inline: 10px;
+  }
+}
+
+.gradient-text {
+  font-weight: 800;
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--pink),
+    var(--purple),
+    var(--blue),
+    var(--pink)
+  );
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  z-index: 40;
+}
+
+.login,
+.demo,
+.contact {
+  padding: 0.3rem 1.5rem;
+  border-radius: 10px;
+  transition: 200ms ease-in-out;
+  border: 2px solid var(--text);
+}
+
+.login:hover {
+  background: #d3d6dd;
+  color: var(--secondary);
+  border-color: #d3d6dd;
+}
+
+.demo:hover {
+  background: #72a2f9;
+}
+
+.contact:hover {
+  background: #80069c;
+}
+
+.aboutContainer {
+  /* background: linear-gradient(to bottom right, #0b053a, #344461); */
+  background: linear-gradient(to bottom, #161626, #1C0D90)
+}
+
+.aboutContainer::before {
+  background: rgba(0, 0, 0, 0.6); /* Black overlay with 60% opacity */
+  z-index: 1;
+}
+
+.p-about {
+  width: 80%;
+}
+
+.teddy {
+  background: linear-gradient(to bottom right, #0b053a, #344461);
+}
