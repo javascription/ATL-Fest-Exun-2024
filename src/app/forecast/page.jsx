@@ -8,8 +8,8 @@ export default function Forecast() {
         <>
             {session ? (
                 <section className="h-screen w-screen absolute top-0 left-0">
-                    <img src="/temp.png" className="absolute top-[8rem] left-[8rem]"/>
-                    <img src="/temp1.png" className="absolute top-[8rem] right-[14rem]" />
+                    <img src="/temp.png" alt="temperature" className="absolute top-[8rem] left-[8rem]"/>
+                    <img src="/temp1.png" alt="temperature" className="absolute top-[8rem] right-[14rem]" />
                 </section>
             ) : (
                 <>

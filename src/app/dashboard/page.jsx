@@ -11,14 +11,14 @@ export default function Products() {
                 <>
                 <section>
                     <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-lg">
-                    <div className="bg-[#b561f6] flex items-center justify-center w-8 h-8 rounded-full text-white top-[35rem] fixed right-5 z-30"><FontAwesomeIcon icon={faBars} /></div>
+
                         <h2 className="mb-5 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
                             Drone
                         </h2>
                         <h2 className="text-2xl text-left text-tertiary font-[700]">
                             Overview
                         </h2>
-                        <img src="/field.png" className="top-[5rem] mb-10" />
+                        <img src="/field.png" className="top-[5rem] mb-10" alt="farm" />
                         <h2 className="text-2xl text-left text-tertiary font-[700] mb-5">
                             Updates
                         </h2>
@@ -35,7 +35,7 @@ export default function Products() {
                         <h2 className="text-2xl text-left text-tertiary font-[700]">
                             Health Metrics
                         </h2>
-                        <img src="/metrix.png" className="mb-10" />
+                        <img src="/metrix.png" className="mb-10" alt="health metrics" />
                     </div>
                 </section>
                 </>
