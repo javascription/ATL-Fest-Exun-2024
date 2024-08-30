@@ -9,13 +9,13 @@ export default function Hero() {
                     className="relative flex flex-col gap-4 items-center justify-center px-4"
                 >
                     <div className="mi:text-3xl text-4xl md:text-7xl font-bold dark:text-white text-center">
-                    NuxeCorps
+                    720+ Sown
                     </div>
-                    <div className="mi:text-xs font-extralight text-base md:text-[2rem] md:leading-[40px] dark:text-neutral-200 py-4">
-                    A Friend in Every Hug, Comfort in Every Word.
+                    <div className="mi:text-3xl text-4xl md:text-7xl font-[900] dark:text-white text-center py-4">
+                    yesterday.
                     </div>
                     <button className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2">
-                    About Us
+                     Harvest
                     </button>
                 </TextMotion>
             </section>

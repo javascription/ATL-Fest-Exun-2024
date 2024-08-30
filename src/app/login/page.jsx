@@ -32,17 +32,17 @@ export default function Login () {
                    
                 ) : (
                     
-                    <div className="flex items-center justify-center flex-col border-2 border-[#ffffff34] w-[50%] h-[60%] relative bg-[#02070f] rounded-[20px] font-medium">
-                        <div className={`${inter.className} text-5xl absolute top-[2rem]`}><span className="gradient-text">Sign In!</span></div>
+                    <div className="flex items-center justify-center flex-col border-2 border-[#00000034] bg-[#eeeeee] w-[50%] h-[60%] relative rounded-[20px] font-medium">
+                        <div className={`${inter.className} text-5xl absolute top-[2rem] text-secondary font-extrabold`}>Sign In!</div>
                         <button onClick={() => signIn('github')}
                             className="w-[70%] h-[15%] border-2 border-[#ffffff34] text-[1.3rem]
-                            mt-20 bg-[#2b3137] text-primary px-4 py-2 rounded-lg transition-all duration-300 hover:bg-[#0f1214] hover:shadow-lg"
+                            mt-20 bg-[#111213] text-primary px-4 py-2 rounded-lg transition-all duration-300 hover:bg-background hover:border-primary hover:text-primary hover:shadow-lg"
                         >
                             <FontAwesomeIcon icon={faGithub}/> Continue with GitHub
                         </button>
                         <button onClick={() => signIn('google')}
                             className="w-[70%] h-[15%] border-2 text-[1.3rem]
-                            mt-8 bg-[var(--text)] border-[#00000034] text-secondary px-4 py-2 rounded-lg transition-all duration-300 hover:bg-[var(--secondary)] hover:border-primary hover:text-primary hover:shadow-lg"
+                            mt-8 bg-[var(--text)] border-[#00000034] text-primary px-4 py-2 rounded-lg transition-all duration-300 hover:bg-background hover:border-primary hover:text-primary hover:shadow-lg"
                         >
                             <FontAwesomeIcon icon={faGoogle}/> Continue with Google
                         </button>

@@ -53,9 +53,10 @@ export default function LoginNav() {
                             <Link href="/" className="mo:text-[2.5rem] mi:text-[1.8rem]">kisaan</Link>
                         </div>
                         <ul className="relative flex gap-12 mo:hidden items-center">
-                            <li><Link href="/#about" className="relative">About</Link></li>
-                            <li><Link href="/demo" className="relative">Demo</Link></li>
-                            <li><Link href="/merchandise" className="relative">Merchandise</Link></li>
+                            <li><Link href="/forecast" className="relative">Weather</Link></li>
+                            <li><Link href="/track" className="relative">Progress</Link></li>
+                            <li><Link href="/products" className="relative">Products</Link></li>
+                            <li><Link href="/cart" className="relative">Cart</Link></li>
                             <li><Link href="/contact" className="relative">Contact</Link></li>
                             <li>
                                 <Link href="/login" className="relative mr-[3.6rem] login">
@@ -64,10 +65,10 @@ export default function LoginNav() {
                             </li>
                         </ul>
                         <FontAwesomeIcon icon={faBars} id="bars" onClick={() => openWrapper()} ref={barsIconRef}
-                            className="color-primary cursor-pointer mr-[4rem] hidden mo:block mo:text-5xl mi:text-3xl" />
+                            className="cursor-pointer mr-[4rem] hidden mo:block mo:text-5xl mi:text-3xl" />
                         
                         <FontAwesomeIcon icon={faXmark} onClick={() => closeWrapper()} ref={closeIconRef}
-                            className="hidden text-primary text-[3.3rem] border-4 rounded-2xl mr-12 px-5" />
+                            className="hidden text-[3.3rem] border-4 rounded-2xl mr-12 px-5" />
                     </div>
                 </header>
                 <div ref={wrapperRef}
@@ -75,9 +76,10 @@ export default function LoginNav() {
                                 p-13-percent backdrop-blur-[15px]
                                 text-center items-center z-[1]">
                     <ul className="gap-8 flex flex-col">
-                        <li><Link className="text-[2.3rem] mx:text-[1.9rem]" href="/">About</Link></li>
-                        <li><Link className="text-[2.3rem] mx:text-[1.9rem]" href="/demo">Demo</Link></li>
-                        <li><Link className="text-[2.3rem] mx:text-[1.9rem]" href="/merchandise">Merchandise</Link></li>
+                        <li><Link className="text-[2.3rem] mx:text-[1.9rem]" href="/forecast">Weather</Link></li>
+                        <li><Link className="text-[2.3rem] mx:text-[1.9rem]" href="/track">Progress</Link></li>
+                        <li><Link className="text-[2.3rem] mx:text-[1.9rem]" href="/products">Products</Link></li>
+                        <li><Link className="text-[2.3rem] mx:text-[1.9rem]" href="/cart">Cart</Link></li>
                         <li><Link className="text-[2.3rem] mx:text-[1.9rem]" href="/contact">Contact</Link></li>
                         <li><Link className="text-[2.3rem] mx:text-[1.9rem] login" href="/login">{session && session.user ? session.user.name.split(" ")[0] : "Login"}</Link></li>
                     </ul>

@@ -4,8 +4,9 @@
 
 :root {
 
-  --background: #01050c;
-  --text: #e5edfd;
+  --background: #fff;
+  --text: #000;
+  --primary: #ABCB44;
   --secondary: #161616;
 
   --pink: rgb(233, 30, 99);
@@ -15,7 +16,7 @@
 
 @layer base {
   html {
-    color-scheme: dark !important;
+    color-scheme: light !important;
   }
 }
 
@@ -26,8 +27,8 @@
 } 
 
 body {
-  color: rgb(var(--foreground-rgb));
-  
+    color: var(--text);
+    background: var(--background);
 }
 
 @layer utilities {
@@ -115,4 +116,41 @@ body {
 
 .teddy {
   background: linear-gradient(to bottom right, #0b053a, #344461);
+}
+
+.blog {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 40rem;
+    z-index: -1;
+    background: var(--linear-grad);
+}
+
+.blog {
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#cComingSoon {
+  font-size: 3rem;
+  font-family: var(--raleway);
+  font-weight: 200;
+  color: var(--primary-color)
+}
+
+@media (max-width: 768px) {
+  #cComingSoon {
+    font-size: 2.6rem;
+}
+}
+
+@media (max-width: 478px) {
+  #cComingSoon {
+    font-size: 2.2rem;
+}
 }

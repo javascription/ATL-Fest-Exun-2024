@@ -2,8 +2,16 @@
 
 module.exports = {
   content: [
-    "./src/components/layout.jsx",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/layout.jsx",
+    "./src/app/cart/page.jsx",
+    "./src/app/contact/page.jsx",
+    "./src/app/products/page.jsx",
+    "./src/app/login/page.jsx",
+    "./src/components/About.jsx",
+    "./src/components/Hero.jsx",
+    "./src/components/LoginNav.jsx",
+    "./src/components/ui/Heading.jsx",
+    "./src/components/ui/TextMotion.jsx",
   ],
   theme: {
     extend: {
@@ -15,6 +23,7 @@ module.exports = {
       colors: {
         primary: 'var(--text)',
         background: 'var(--background)',
+        primary: 'var(--primary)',
         secondary: 'var(--secondary)',
         tertiary: 'var(--tertiary)'
       },
